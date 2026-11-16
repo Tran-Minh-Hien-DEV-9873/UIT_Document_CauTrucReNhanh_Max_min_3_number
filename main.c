@@ -9,6 +9,7 @@ int main(int argc, char *argv[]) {
 	int c;
 	int max;
 	int min;
+	int mid;
 	
 	printf("a : ");
 	scanf("%d", &a);
@@ -39,9 +40,12 @@ int main(int argc, char *argv[]) {
 	{
 		min = c;
 	}	
+	
+	mid = (a + b + c) - (max + min);
 		
 	printf("Max : %d \n", max);
 	printf("Min : %d \n", min);
+	printf("Mid: %d ", mid);
 	
 	
 	return 0;
